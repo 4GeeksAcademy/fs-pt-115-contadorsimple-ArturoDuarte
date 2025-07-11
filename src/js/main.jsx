@@ -9,23 +9,23 @@ let counter = 0;
 const reactRender = ReactDOM.createRoot(document.getElementById("root"));
 
 setInterval(() => {
-	const seis = Math.floor(counter / 100000) % 10;
-	const cinco = Math.floor(counter / 10000) % 10;
-	const cuatro = Math.floor(counter / 1000) % 10;
-	const tres = Math.floor(counter / 100) % 10;
-	const dos = Math.floor(counter / 10) % 10;
-	const uno = counter % 10;
-	console.log(seis, cinco, cuatro, tres, dos, uno);
+	const contadorSeis = Math.floor(counter / 100000) % 10;
+	const contadorCinco = Math.floor(counter / 10000) % 10;
+	const contadorCuatro = Math.floor(counter / 1000) % 10;
+	const contadorTres = Math.floor(counter / 100) % 10;
+	const contadorDos = Math.floor(counter / 10) % 10;
+	const contadorUno = counter % 10;
+	console.log(contadorUno);
 	
 
 	reactRender.render(
 			<Home
-				seis={seis}
-				cinco={cinco}
-				cuatro={cuatro}
-				tres={tres}
-				dos={dos}
-				uno={uno}
+				seis={contadorSeis}
+				cinco={contadorCinco}
+				cuatro={contadorCuatro}
+				tres={contadorTres}
+				dos={contadorDos}
+				uno={contadorUno}
 			/>
 	);
 
