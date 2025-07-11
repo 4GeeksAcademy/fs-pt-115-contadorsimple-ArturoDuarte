@@ -9,3 +9,10 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.tamañoDelNumero {
+    font-size: 19vh;
+}
+.container {
+    background-color: #101010; 
+    color: white;
+}
